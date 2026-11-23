@@ -97,9 +97,12 @@
 
   footer{padding:32px 0;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  .demo-banner{background:#14212b;color:#fff;text-align:center;font-size:.85rem;padding:8px 16px}
+  .info .demo-form-note{background:#fdf1e9;border:1px solid #f3c9b0;border-radius:10px;padding:12px 14px;font-size:.9rem;color:#7a3a17;margin-top:14px}
 </style>
 </head>
 <body>
+  <div class="demo-banner" data-i18n="banner">⚠️ This is a demo website. Alpine Ridge is not a real business.</div>
 
 <header>
   <div class="wrap nav">
@@ -203,15 +206,15 @@
       <div class="info">
         <div class="section-head" style="margin-bottom:20px">
           <h2 data-i18n="ct_title">Get a free estimate</h2>
+          <p class="demo-form-note" data-i18n="form_note">Demo form: it does not send any data. Please do not enter your real personal information.</p>
         </div>
         <p><strong data-i18n="ct_phone">Phone:</strong> (801) 555-0134</p>
         <p><strong data-i18n="ct_area">Service area:</strong> Orem, Provo, Lindon, American Fork, Lehi</p>
         <p><strong data-i18n="ct_hours">Hours:</strong> <span data-i18n="ct_hours_v">Mon–Sat 7am–7pm · Emergencies 24/7</span></p>
       </div>
-      <!-- Form uses Web3Forms (free). Replace YOUR_ACCESS_KEY with the key from web3forms.com -->
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
-        <input type="hidden" name="subject" value="New estimate request — website">
+      <!-- Form uses Web3Forms (free). -->
+      <form onsubmit="event.preventDefault(); this.reset();">
+        
         <div><label for="name" data-i18n="f_name">Name</label><input id="name" name="name" required></div>
         <div><label for="phone" data-i18n="f_phone">Phone</label><input id="phone" name="phone" type="tel" required></div>
         <div><label for="service" data-i18n="f_service">Service needed</label>
@@ -262,6 +265,8 @@ const es = {
   ct_hours_v:"Lun–Sáb 7am–7pm · Emergencias 24/7",
   f_name:"Nombre", f_phone:"Teléfono", f_service:"Servicio que necesitas", f_msg:"Mensaje", f_send:"Enviar solicitud",
   o1:"Reparación de AC", o2:"Reparación de calefacción", o3:"Instalación nueva", o4:"Mantenimiento",
+  banner:"⚠️ Este es un sitio web de demostración. Alpine Ridge no es una empresa real.",
+  form_note:"Formulario de demostración: no envía datos. Por favor, no escribas tu información personal real.",
   demo:"Sitio de demostración — negocio ficticio", credit:"Sitio web por JJ Wining LLC"
 };
 const en = {};
