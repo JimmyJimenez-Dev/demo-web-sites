@@ -97,7 +97,7 @@
 
   footer{padding:32px 0;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
-  .demo-banner{background:#14212b;color:#fff;text-align:center;font-size:.85rem;padding:8px 16px}
+  .demo-banner{background:#e0662f;color:#fff;text-align:center;font-size:1.1rem;font-weight:600;padding:14px 20px;line-height:1.4}
   .info .demo-form-note{background:#fdf1e9;border:1px solid #f3c9b0;border-radius:10px;padding:12px 14px;font-size:.9rem;color:#7a3a17;margin-top:14px}
 </style>
 </head>
@@ -213,7 +213,7 @@
         <p><strong data-i18n="ct_hours">Hours:</strong> <span data-i18n="ct_hours_v">Mon–Sat 7am–7pm · Emergencies 24/7</span></p>
       </div>
       <!-- Form uses Web3Forms (free). -->
-      <form onsubmit="event.preventDefault(); this.reset();">
+      <form onsubmit="event.preventDefault(); this.reset(); alert('Demo — no data was sent / Demo — no se envió ningún dato');">
         
         <div><label for="name" data-i18n="f_name">Name</label><input id="name" name="name" required></div>
         <div><label for="phone" data-i18n="f_phone">Phone</label><input id="phone" name="phone" type="tel" required></div>
