@@ -16,7 +16,6 @@ Sample websites for small businesses and personal projects. Each folder is a com
 |------|------|-----------|
 | [demo-alpine-ridge](demo-alpine-ridge/) | Residential HVAC company (bilingual EN/ES) | [View live](https://demo-web-site.jimmyjimenez.workers.dev/) |
 
-More demos coming soon.
 
 ### How the sites are built and hosted
 - **Code:** static HTML, CSS and JavaScript, with no frameworks and no build step. Each site is a single `index.html` file.
@@ -49,7 +48,6 @@ Sitios web de muestra para pequeños negocios y proyectos personales. Cada carpe
 |------|------|---------------|
 | [demo-alpine-ridge](demo-alpine-ridge/) | Empresa de climatización residencial (bilingüe EN/ES) | [Ver en vivo](https://demo-web-site.jimmyjimenez.workers.dev/) |
 
-Pronto habrá más demos.
 
 ### Cómo se construyen y se publican
 - **Código:** HTML, CSS y JavaScript estáticos, sin frameworks ni proceso de build. Cada sitio es un solo archivo `index.html`.
